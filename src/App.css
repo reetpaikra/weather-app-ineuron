@@ -1,38 +1,103 @@
-.App {
+/* src/App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #3498db; /* Light Blue */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.weather-app {
+  background-color: #f9f9f9; /* Off White */
+  padding: 40px; /* Increased padding for the weather app container */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+  max-width: 600px; /* Increased maximum width for the weather app container */
+  width: 100%;
+  animation: fade-in 0.5s ease-in-out;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1 {
+  font-size: 42px; /* Increased font size for the heading */
+  color: #007bff; /* Bright Blue */
+  margin-bottom: 40px; /* Increased margin for the heading */
+}
+
+form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 40px; /* Increased margin for the form */
 }
 
-.App-link {
-  color: #61dafb;
+input[type="text"] {
+  padding: 16px; /* Increased padding for the input field */
+  border: 1px solid #dddddd; /* Light Gray */
+  border-radius: 5px;
+  outline: none;
+  font-size: 20px; /* Increased font size for the input field */
+  margin-bottom: 20px; /* Increased margin for the input field */
+  width: 100%;
+  max-width: 400px;
 }
 
-@keyframes App-logo-spin {
+button {
+  padding: 16px 24px; /* Increased padding for the button */
+  border: none;
+  background-color: #007bff; /* Bright Blue */
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px; /* Increased font size for the button */
+  outline: none;
+  width: 100%;
+  max-width: 400px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0052b3; /* Slightly darker Bright Blue */
+}
+
+.weather-data {
+  padding-top: 40px; /* Increased padding for the weather data */
+  animation: slide-up 0.5s ease-in-out;
+}
+
+@keyframes slide-up {
   from {
-    transform: rotate(0deg);
+    transform: translateY(10px);
+    opacity: 0;
   }
   to {
-    transform: rotate(360deg);
+    transform: translateY(0);
+    opacity: 1;
   }
+}
+
+.weather-data h2 {
+  font-size: 32px; /* Increased font size for the weather data heading */
+  color: #222222; /* Black */
+  margin-bottom: 30px; /* Increased margin for the weather data heading */
+}
+
+.weather-data p {
+  font-size: 24px; /* Increased font size for the weather data text */
+  color: #333333; /* Dark Gray */
+  margin-bottom: 20px; /* Increased margin for the weather data text */
 }
