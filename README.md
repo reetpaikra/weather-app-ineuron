@@ -1,7 +1,15 @@
-# Getting Started with Create React App
+# Weather App
+## Description
+I have created the weather app using reactjs.
+## User Interface
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Technology used
+ReactJS
+NodeJS
+HTML
+CSS
+JavaScript
 ## Available Scripts
 
 In the project directory, you can run:
