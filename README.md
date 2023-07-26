@@ -2,7 +2,8 @@
 ## Description
 I have created the weather app using reactjs.
 ## User Interface
-
+![Screenshot (32)](https://github.com/reetpaikra/weather-app-ineuron/assets/140016501/10710eed-46f1-492e-9647-344efac9347b)
+![Screenshot (33)](https://github.com/reetpaikra/weather-app-ineuron/assets/140016501/52d25a19-426f-48dc-a10b-1a1f67b849ce)
 
 ## Technology used
 ReactJS
